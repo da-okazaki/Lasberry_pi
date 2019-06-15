@@ -23,6 +23,6 @@ if humidity is not None and temp is not None:
 else:
     msg = u"温湿度を測定できませんでした"
 
-slack = slackweb.Slack(url="https://hooks.slack.com/services/...")#手順4-2のURLを記載する
+slack = slackweb.Slack(url="https://hooks.slack.com/services/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")
 slack.notify(text=msg)
 print msg
