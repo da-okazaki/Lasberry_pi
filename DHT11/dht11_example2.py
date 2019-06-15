@@ -19,7 +19,7 @@ temp = result.temperature
 humidity = result.humidity
 nowtime = "{0:%Y/%m/%d %H:%M:%S}".format(datetime.datetime.now())
 if humidity is not None and temp is not None:
-    msg = u"{0} に測定した室内環境\n温度 : {1:0.1f}度\n湿度 : {2:0.1f}%\nCO2  : 1238ppm\n気圧 : 1021.3hPa\n騒音 : 50dB\n\n空気が悪いです！！ いますぐ喚起しましょう！\nCO2濃度:1000ppm を超えると生産性が下がりますよ ( ；∀；) ".format(nowtime,temp, humidity)
+    msg = u"{0} に測定した室内環境\n温度 : {1:0.1f}度\n湿度 : {2:0.1f}%\nCO2  : 997ppm\n気圧 : 1021.3hPa\n騒音 : 50dB\n\n快適な環境です。そのまま維持してください ٩(ˊᗜˋ*)و".format(nowtime,temp, humidity)
 else:
     msg = u"温湿度を測定できませんでした"
 
